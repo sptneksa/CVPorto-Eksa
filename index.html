@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Septian Eka Saputra — Radiologic Technologist, Data Analyst, dan Creative Professional. Portfolio & CV Online.">
+  <meta name="keywords" content="Septian Eka Saputra, Radiologi, Radiographer, CT Scan, MRI, Portfolio, Data Analyst">
+  <meta name="author" content="Septian Eka Saputra">
+  <title>Septian Eka Saputra — Radiologic Technologist & Creative Professional</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">EKSA<span>.dev</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#projects">Proyek</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#certifications">Sertifikasi</a>
+        <a href="#awards">Penghargaan</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <button class="section-edit-btn" onclick="Editors.hero()" title="Edit Hero">✏️</button>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge"><span class="pulse-dot"></span> <span id="r-hero-badge">Open to Opportunities</span></div>
+          <h1><span id="r-hero-name">Septian Eka</span><br><span class="gradient-text" id="r-hero-name2">Saputra</span></h1>
+          <p class="hero-subtitle" id="r-hero-subtitle">Radiologic Technologist · Data Analyst · Creative Professional</p>
+          <p class="hero-description" id="r-hero-desc">Lulusan D-IV Teknologi Radiologi Pencitraan dengan keahlian di CT-Scan, MRI, analisis data, dan manajemen proyek. Menggabungkan kompetensi radiodiagnostik dengan literasi teknologi untuk pelayanan radiologi modern.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary"><span>💬</span> Hubungi Saya</a>
+            <a href="#portfolio" class="btn btn-outline"><span>🎨</span> Lihat Portfolio</a>
+          </div>
+          <div class="hero-stats" id="r-hero-stats">
+            <div class="stat-item"><div class="stat-number">3.89</div><div class="stat-label">IPK</div></div>
+            <div class="stat-item"><div class="stat-number">7+</div><div class="stat-label">Pengalaman Klinis</div></div>
+            <div class="stat-item"><div class="stat-number">8+</div><div class="stat-label">Penghargaan</div></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar">
+              <img id="hero-photo" src="" alt="Septian Eka Saputra" style="display:none; width:100%; height:100%; object-fit:cover; border-radius:50%;">
+              <div class="hero-avatar-placeholder" id="hero-placeholder">SE</div>
+            </div>
+            <div class="floating-card card-1"><div class="card-icon">🏥</div><div class="card-label">Spesialisasi</div><div class="card-value">CT-Scan & MRI</div></div>
+            <div class="floating-card card-2"><div class="card-icon">📊</div><div class="card-label">Analytics</div><div class="card-value">Python & SPSS</div></div>
+            <div class="floating-card card-3"><div class="card-icon">🎨</div><div class="card-label">Creative</div><div class="card-value">Design & Video</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <button class="section-edit-btn" onclick="Editors.about()" title="Edit About">✏️</button>
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Tentang Saya</div><h2 class="section-title">Mengenal <span class="gradient-text">Lebih Dekat</span></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal" id="r-about-text">
+          <p>Lulusan Teknologi Radiologi dengan pengalaman magang klinis komprehensif pada operasional CT-Scan, MRI, dan radiografi konvensional di berbagai RSUP dan RSUD tingkat provinsi. Terlatih menangani volume pasien tinggi, dibuktikan dengan partisipasi sebagai tim medis Medical Check-Up (MCU) X-Ray untuk ratusan personel korporat seperti PT. KAI.</p>
+          <p>Memiliki keunggulan teknis tambahan dalam analisis data statistik, riset klinis (termasuk proyek neuroimaging), dan manajemen proyek. Siap memadukan keahlian radiodiagnostik dengan literasi teknologi untuk mendukung efisiensi pelayanan radiologi yang modern.</p>
+          <div class="about-info-grid" id="r-about-info">
+            <div class="info-item"><div class="info-label">Lokasi</div><div class="info-value">📍 Semarang, Jawa Tengah</div></div>
+            <div class="info-item"><div class="info-label">Bahasa</div><div class="info-value">🌐 Indonesia & English</div></div>
+            <div class="info-item"><div class="info-label">Status STR</div><div class="info-value">✅ Tersertifikasi</div></div>
+            <div class="info-item"><div class="info-label">Kompetensi</div><div class="info-value">🎓 Lulus Uji Nasional</div></div>
+          </div>
+        </div>
+        <div class="about-highlights reveal" id="r-about-highlights">
+          <div class="highlight-card"><div class="highlight-icon">🏥</div><div class="highlight-title">Pencitraan Diagnostik</div><div class="highlight-desc">Pengalaman langsung dengan CT-Scan, MRI, dan radiografi konvensional di rumah sakit rujukan nasional.</div></div>
+          <div class="highlight-card"><div class="highlight-icon">📊</div><div class="highlight-title">Data & Riset</div><div class="highlight-desc">Analisis data statistik, riset klinis, neuroimaging, deep learning, dan bibliometrik menggunakan Python, SPSS, dan SmartPLS.</div></div>
+          <div class="highlight-card"><div class="highlight-icon">🎨</div><div class="highlight-title">Kreatif & Multimedia</div><div class="highlight-desc">Desain grafis, fotografi, videografi, dan editing profesional dengan Adobe Suite dan tools kreatif lainnya.</div></div>
+          <div class="highlight-card"><div class="highlight-icon">💼</div><div class="highlight-title">Manajemen Proyek</div><div class="highlight-desc">Pengalaman memimpin proyek software development menggunakan metodologi Agile/Scrum dan memenangkan tender proyek.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <button class="section-edit-btn" onclick="Editors.skills()" title="Edit Skills">✏️</button>
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Keahlian</div><h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2></div>
+      <div class="skills-grid" id="r-skills"></div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <button class="section-edit-btn" onclick="Editors.education()" title="Edit Education">✏️</button>
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Pendidikan</div><h2 class="section-title">Academic <span class="gradient-text">Background</span></h2></div>
+      <div id="r-education"></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Pengalaman</div><h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2></div>
+      <div class="tab-switcher reveal">
+        <button class="tab-btn active" data-tab="clinical">🏥 Pengalaman Klinis</button>
+        <button class="tab-btn" data-tab="professional">💼 Pengalaman Profesional</button>
+      </div>
+      <div class="tab-content active" id="tab-clinical"><div class="timeline" id="r-exp-clinical"></div></div>
+      <div class="tab-content" id="tab-professional"><div class="timeline" id="r-exp-professional"></div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Proyek</div><h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2></div>
+      <div class="projects-grid" id="r-projects"></div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Portfolio</div><h2 class="section-title">My <span class="gradient-text">Works</span></h2></div>
+      <div class="portfolio-filters reveal" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="desain">🎨 Desain</button>
+        <button class="filter-btn" data-filter="foto">📷 Fotografi</button>
+        <button class="filter-btn" data-filter="video">🎬 Video</button>
+        <button class="filter-btn" data-filter="ilustrasi">✏️ Ilustrasi</button>
+        <button class="filter-btn" data-filter="lainnya">📁 Lainnya</button>
+      </div>
+      <div class="portfolio-grid reveal" id="portfolio-grid">
+        <div class="portfolio-empty" id="portfolio-empty"><div class="portfolio-empty-icon">🎨</div><div class="portfolio-empty-text">Portfolio akan segera ditampilkan</div><div class="portfolio-empty-sub admin-only" style="display:none">Klik tombol ✚ di bawah untuk menambahkan karya</div></div>
+      </div>
+      <button class="admin-add-btn" onclick="Editors.addPortfolio()">✚ Tambah Karya Portfolio</button>
+    </div>
+  </section>
+
+
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Sertifikasi</div><h2 class="section-title">Certifications & <span class="gradient-text">Training</span></h2></div>
+      <div class="certs-grid" id="r-certs"></div>
+      <button class="admin-add-btn" onclick="Editors.addCert()">✚ Tambah Sertifikasi</button>
+    </div>
+  </section>
+
+  <!-- Awards Section -->
+  <section id="awards">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Penghargaan</div><h2 class="section-title">Awards & <span class="gradient-text">Leadership</span></h2></div>
+      <div class="awards-grid" id="r-awards"></div>
+      <button class="admin-add-btn" onclick="Editors.addAward()">✚ Tambah Penghargaan</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <button class="section-edit-btn" onclick="Editors.contact()" title="Edit Contact">✏️</button>
+    <div class="container">
+      <div class="section-header reveal"><div class="section-tag">Kontak</div><h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2></div>
+      <div class="contact-grid reveal" id="r-contact"></div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><p class="footer-text">© 2026 <span class="gradient-text">Septian Eka Saputra</span>. All rights reserved.</p></div></footer>
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <div class="lightbox-info"><div class="lightbox-title" id="lightbox-title"></div><div class="lightbox-cat" id="lightbox-cat"></div></div>
+  </div>
+
+  <!-- Portfolio Detail Modal -->
+  <div class="modal-overlay" id="portfolio-detail">
+    <div class="edit-modal-box" style="max-width:800px">
+      <div class="edit-modal-header">
+        <h3 id="pd-title"></h3>
+        <button class="edit-modal-close" onclick="PortfolioDetail.close()">✕</button>
+      </div>
+      <div class="edit-modal-body" id="pd-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
