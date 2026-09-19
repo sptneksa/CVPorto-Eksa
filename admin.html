@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CMS — Septian Eka Saputra</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ff4d17'/><circle cx='16' cy='16' r='6' fill='none' stroke='%2308080a' stroke-width='2.5'/></svg>">
+</head>
+
+<body>
+
+  <!-- ===== Gerbang Masuk Aman (Khusus Pemilik) ===== -->
+  <div id="gate">
+    <form class="gate-box" id="gate-form">
+      <div class="gate-icon-wrap">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+      </div>
+      <span class="gate-badge">RESTRICTED PORTAL</span>
+      <h1>PORTAL PRIVATE</h1>
+      <p>Panel ini hanya dapat diakses oleh Septian Eka Saputra</p>
+      <div class="gate-field">
+        <input type="password" id="gate-input" placeholder="Masukkan Passcode Pemilik" autocomplete="current-password" autofocus>
+        <button type="submit" class="btn block accent" id="gate-submit">Masuk ke CMS</button>
+      </div>
+      <div class="gate-err" id="gate-err"></div>
+      <div class="gate-lockout" id="gate-lockout" style="display:none;"></div>
+      <div class="gate-foot">
+        <a href="index.html" class="gate-back-link">&larr; Kembali ke Website</a>
+      </div>
+    </form>
+  </div>
+
+  <!-- ===== Aplikasi ===== -->
+  <div id="app">
+
+    <aside class="side" id="side">
+      <div class="side-brand"><b id="brand-name">EKSA</b><em>CMS</em></div>
+      <nav class="side-nav" id="side-nav"></nav>
+      <div class="side-foot">
+        <a class="btn block" href="index.html" target="_blank" id="btn-preview"></a>
+        <button class="btn block accent" id="btn-publish"></button>
+        <button class="btn block danger-ghost" id="btn-logout" type="button"></button>
+      </div>
+    </aside>
+
+    <div>
+      <header class="top">
+        <button class="icon-btn mob-menu" id="btn-mob"></button>
+        <h2 id="page-title">Dashboard</h2>
+        <div class="spacer"></div>
+        <div class="save-state" id="save-state"></div>
+        <div class="lang-pick">
+          <button data-lang="id" class="active">ID</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <button class="btn danger-ghost btn-sm" id="btn-top-logout" type="button" title="Keluar dari sesi"></button>
+      </header>
+      <main class="work" id="work"></main>
+    </div>
+
+  </div>
+
+  <div class="confirm-back" id="confirm">
+    <div class="confirm-box">
+      <h4 id="confirm-title"></h4>
+      <p id="confirm-text"></p>
+      <div class="row">
+        <button class="btn" id="confirm-no">Batal</button>
+        <button class="btn danger" id="confirm-yes">Ya, lanjutkan</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <input type="file" id="hidden-file" hidden multiple>
+
+  <script src="data.js"></script>
+  <script src="content.js"></script>
+  <script src="icons.js"></script>
+  <script src="store.js"></script>
+  <script src="admin.js"></script>
+</body>
+
+</html>

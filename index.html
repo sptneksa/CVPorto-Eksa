@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" id="meta-desc"
+    content="Septian Eka Saputra — Radiografer, Data Analyst, dan Creative Professional. Portfolio & CV online.">
+  <meta name="keywords" content="Septian Eka Saputra, Radiologi, Radiografer, CT Scan, MRI, Portfolio, Data Analyst">
+  <meta name="author" content="Septian Eka Saputra">
+  <meta name="theme-color" content="#08080a">
+  <title>Septian Eka Saputra — Radiografer & Creative Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2308080a'/><circle cx='16' cy='16' r='6' fill='none' stroke='%23ff4d17' stroke-width='2'/></svg>">
+  <script>
+    (function () {
+      try {
+        var m = localStorage.getItem('eksa_mode') || 'dark';
+        if (m === 'light') {
+          document.documentElement.setAttribute('data-mode', 'light');
+        }
+        var t = localStorage.getItem('eksa_theme') || 'solar';
+        if (t !== 'solar') {
+          document.documentElement.setAttribute('data-theme', t);
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ===== Modern Bounce Preloader ===== -->
+  <div id="preloader">
+    <div class="pre-center">
+      <div class="pre-brand-bounce" id="pre-brand">
+        <span style="--i:0">E</span>
+        <span style="--i:1">K</span>
+        <span style="--i:2">S</span>
+        <span style="--i:3">A</span>
+      </div>
+      <div class="pre-bounce-shadow"></div>
+      <div class="pre-sub">SEPTIAN EKA SAPUTRA</div>
+    </div>
+  </div>
+
+  <!-- ===== Modern Atmosphere ===== -->
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="ambient-glow" id="ambient-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== Progress Line ===== -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Navigasi ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" id="nav-logo">EKSA</a>
+      <div class="nav-links" id="nav-links"><span class="nav-ind" id="nav-ind"></span></div>
+      <div class="nav-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="id">ID</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mode-toggle-btn" id="mode-toggle-btn" type="button" aria-label="Ganti Mode Tema (Terang / Gelap)"
+          title="Mode Terang / Gelap">
+          <span class="mode-icon" id="mode-icon"></span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- penanda section di tepi kanan -->
+  <div class="rail" id="rail" aria-hidden="true"></div>
+
+  <!-- pembungkus isi: jadi sasaran animasi kemiringan saat scroll -->
+  <div id="smooth-wrap">
+    <main>
+
+      <!-- ===== Hero ===== -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <div class="hero-eyebrow" data-reveal style="--d:0.04s"><span class="pulse-dot"></span><span
+                  id="hero-badge"></span></div>
+              <h1 id="hero-name" data-reveal style="--d:0.12s"></h1>
+              <div class="hero-roles" data-reveal style="--d:0.20s"><span class="bar"></span>
+                <div class="slot" id="hero-roles"></div>
+              </div>
+              <p class="hero-desc" id="hero-desc" data-reveal style="--d:0.28s"></p>
+              <div class="hero-actions" id="hero-actions" data-reveal style="--d:0.36s"></div>
+              <div class="hero-stats" id="hero-stats" data-reveal style="--d:0.44s"></div>
+            </div>
+            <div class="hero-visual">
+              <div class="portrait-wrap" data-reveal style="--d:0.22s">
+                <div class="portrait" id="portrait" data-parallax="-0.05">
+                  <span class="portrait-ring" aria-hidden="true"></span>
+                  <img id="hero-photo" class="portrait-img photo-normal" src="" alt="Septian Eka Saputra" hidden>
+                  <img id="xray-photo" class="portrait-img photo-xray" src="xray.png"
+                    alt="Septian Eka Saputra - Sinar X (X-Ray Radiografi)" aria-hidden="true">
+                  <div class="portrait-fallback" id="portrait-fallback">SE</div>
+                  <div class="xray-hud" id="xray-hud" aria-hidden="true">
+                    <div class="hud-tag top-l"><span class="hud-blink"></span><span>kVp 120 · mAs 3.2</span></div>
+                    <div class="hud-tag top-r"><span>LAT · DICOM 3.0</span></div>
+                    <div class="hud-tag bot-l" id="hud-bot-l"><span>WL:400 WW:2000 [BONE]</span></div>
+                    <div class="hud-tag bot-r"><span class="hud-badge">LIVE RAD</span></div>
+                    <div class="xray-grid"></div>
+                  </div>
+                  <div class="xray-beam" id="xray-beam" aria-hidden="true">
+                    <div class="hud-reticle"></div>
+                  </div>
+                  <button class="xray-toggle-btn" id="xray-toggle-btn" type="button" aria-label="Toggle X-Ray Scan Mode"
+                    title="Mode Radiografi (Sinar-X)">
+                    <span class="pulse-scan"></span><span class="xray-btn-label">SCAN MODE</span>
+                  </button>
+                </div>
+                <div id="hero-cards"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint"><span class="track"></span><span id="scroll-label">Scroll</span></div>
+      </section>
+
+      <!-- ===== Tentang ===== -->
+      <section id="about">
+        <div class="sec-watermark" aria-hidden="true" data-num="01">01</div>
+        <div class="container">
+          <div class="sec-head" data-sec="about"></div>
+          <div class="about-grid">
+            <div>
+              <div class="about-body" id="about-body" data-reveal></div>
+              <div class="about-info" id="about-info"></div>
+            </div>
+            <div class="highlights" id="about-highlights"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Keahlian ===== -->
+      <section id="skills">
+        <div class="sec-watermark" aria-hidden="true" data-num="02">02</div>
+        <div class="container">
+          <div class="sec-head" data-sec="skills"></div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </div>
+        <div class="marquee" id="skills-marquee" aria-hidden="true">
+          <div class="marquee-track" id="marquee-track"></div>
+        </div>
+      </section>
+
+      <!-- ===== Pendidikan ===== -->
+      <section id="education">
+        <div class="sec-watermark" aria-hidden="true" data-num="03">03</div>
+        <div class="container">
+          <div class="sec-head" data-sec="education"></div>
+          <div id="education-list"></div>
+        </div>
+      </section>
+
+      <!-- ===== Pengalaman ===== -->
+      <section id="experience">
+        <div class="sec-watermark" aria-hidden="true" data-num="04">04</div>
+        <div class="container">
+          <div class="sec-head" data-sec="experience"></div>
+          <div class="tab-switcher" id="exp-tabs"></div>
+          <div class="tab-panel active" id="tab-clinical">
+            <div class="timeline" id="tl-clinical"></div>
+          </div>
+          <div class="tab-panel" id="tab-professional">
+            <div class="timeline" id="tl-professional"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Proyek ===== -->
+      <section id="projects">
+        <div class="sec-watermark" aria-hidden="true" data-num="05">05</div>
+        <div class="container">
+          <div class="sec-head" data-sec="projects"></div>
+          <div class="projects-list" id="projects-list"></div>
+        </div>
+      </section>
+
+      <!-- ===== Portfolio ===== -->
+      <section id="portfolio">
+        <div class="sec-watermark" aria-hidden="true" data-num="06">06</div>
+        <div class="container">
+          <div class="sec-head" data-sec="portfolio"></div>
+          <div class="filters" id="portfolio-filters"></div>
+          <div class="portfolio-grid" id="portfolio-grid"></div>
+        </div>
+      </section>
+
+      <!-- ===== Sertifikasi ===== -->
+      <section id="certifications">
+        <div class="sec-watermark" aria-hidden="true" data-num="07">07</div>
+        <div class="container">
+          <div class="sec-head" data-sec="certifications"></div>
+          <div class="certs-list" id="certs-list"></div>
+        </div>
+      </section>
+
+      <!-- ===== Penghargaan ===== -->
+      <section id="awards">
+        <div class="sec-watermark" aria-hidden="true" data-num="08">08</div>
+        <div class="container">
+          <div class="sec-head" data-sec="awards"></div>
+          <div class="awards-grid" id="awards-grid"></div>
+        </div>
+      </section>
+
+      <!-- ===== Kontak ===== -->
+      <section id="contact">
+        <div class="sec-watermark" aria-hidden="true" data-num="09">09</div>
+        <div class="container">
+          <div class="sec-head" data-sec="contact"></div>
+          <h2 class="contact-headline" id="contact-headline"></h2>
+          <p class="contact-note" id="contact-note"></p>
+          <div class="contact-list" id="contact-list"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span id="footer-text"></span>
+        <span class="footer-secret" id="footer-secret" title="Septian Eka Saputra" aria-hidden="true">.</span>
+      </div>
+    </footer>
+
+  </div><!-- /#smooth-wrap -->
+
+  <!-- ===== Theme Accent Switcher ===== -->
+  <div class="theme-switcher" id="theme-switcher" aria-label="Pilih Aksen Suasana & Tema">
+    <button class="theme-mode-pill" id="theme-mode-pill" type="button" title="Ganti Mode Terang / Gelap"
+      aria-label="Ganti Mode Terang / Gelap">
+      <span class="theme-mode-icon" id="theme-mode-icon"></span>
+      <span class="theme-mode-text" id="theme-mode-text">DARK</span>
+    </button>
+    <div class="theme-divider"></div>
+    <span class="theme-label">VIBE</span>
+    <button class="theme-dot active" data-theme="solar" style="--dot-color:#ff4d17" title="Solar Ember"></button>
+    <button class="theme-dot" data-theme="aqua" style="--dot-color:#00d2ff" title="Cyber Aqua"></button>
+    <button class="theme-dot" data-theme="violet" style="--dot-color:#b057f8" title="Neon Violet"></button>
+    <button class="theme-dot" data-theme="emerald" style="--dot-color:#10b981" title="Bio Emerald"></button>
+  </div>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg class="progress-ring" viewBox="0 0 44 44" aria-hidden="true">
+      <circle class="ring-bg" cx="22" cy="22" r="19"></circle>
+      <circle class="ring-fill" id="ring-fill" cx="22" cy="22" r="19"></circle>
+    </svg>
+    <span class="btt-icon" id="btt-icon"></span>
+  </button>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close"></button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+    <div class="lightbox-info">
+      <div class="lightbox-title" id="lightbox-title"></div>
+      <div class="lightbox-cat" id="lightbox-cat"></div>
+    </div>
+  </div>
+
+  <!-- ===== Detail portfolio ===== -->
+  <div class="modal-overlay" id="portfolio-detail">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="pd-title"></h3>
+        <button class="modal-close" id="pd-close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="pd-body"></div>
+    </div>
+  </div>
+
+  <!-- ===== Modal Akses Rahasia Pemilik ===== -->
+  <div class="modal-overlay" id="owner-modal">
+    <div class="modal-box owner-box">
+      <div class="modal-head">
+        <div class="owner-head-title">
+          <span class="owner-badge">RESTRICTED ACCESS</span>
+          <h3>Portal Pemilik</h3>
+        </div>
+        <button class="modal-close" id="owner-modal-close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body owner-body">
+        <p class="owner-note">Portal ini khusus untuk pemilik situs (Septian Eka Saputra). Masukkan passcode Anda untuk
+          masuk ke CMS.</p>
+        <form id="owner-quick-form">
+          <div class="owner-input-wrap">
+            <input type="password" id="owner-pass-input" placeholder="Passcode Pemilik" autocomplete="current-password">
+            <button type="submit" class="btn btn-primary owner-go-btn" id="owner-go-btn">Buka CMS</button>
+          </div>
+          <div class="owner-err" id="owner-err"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="content.js"></script>
+  <script src="icons.js"></script>
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
